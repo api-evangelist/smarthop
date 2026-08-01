@@ -1,8 +1,24 @@
 aid: smarthop
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/smarthop.png
 name: SmartHop
-description: SmartHop is a company surfaced as a portfolio company of techstars, union-square-ventures
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: SmartHop is a fleet and trip management platform for small trucking companies, owner-operators,
+  and independent dispatchers. It aggregates real-time loads from multiple freight sources into a single
+  load board and provides load booking, trip creation and management, dispatch management, payroll, profit
+  optimization, market analysis, and performance reporting. SmartHop consumes third-party freight APIs from
+  partners including DAT Freight & Analytics, C.H. Robinson, Loadsmart, Redwood Logistics, Newtrul, and Parade,
+  but does not publish a public developer API of its own; its api.smarthop.co host backs the SmartHop web and
+  mobile apps rather than a documented external API.
 url: https://raw.githubusercontent.com/api-evangelist/smarthop/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,15 +29,41 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Trucking
+- Freight
+- Logistics
+- Fleet Management
+- Load Board
+- Dispatch
+- Transportation
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 common:
 - type: Website
   url: https://smarthop.com/
+- type: Pricing
+  url: https://smarthop.com/pricing
+- type: SignUp
+  url: https://smarthop.com/request-a-demo
+- type: Login
+  url: https://app.smarthop.co/login
+- type: Support
+  url: https://smarthop.com/contact
+- type: TermsOfService
+  url: https://smarthop.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://smarthop.com/privacy-policy
+- type: DomainSecurity
+  url: security/smarthop-domain-security.yml
